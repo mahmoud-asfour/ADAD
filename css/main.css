@@ -1035,8 +1035,14 @@ html[dir="ltr"] .login-form .input-group i.fa-light.fa-eye{
 }
 
 @media (max-width: 480px) {
+    /* .adb-avatar-name{
+      padding: 5px;
+    }
     html[dir="ltr"] .adb-avatar-name{
-      padding: 10px 0;
+      padding: 5px 0;
+    } */
+    .adb-header .container-fluid{
+      padding: 0;
     }
     .adb-user-dropdown {
         min-width: 180px;
