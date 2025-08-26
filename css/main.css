@@ -1028,15 +1028,28 @@ html[dir="ltr"] .login-form .input-group i.fa-light.fa-eye{
         padding: 10px 16px;
         font-size: 15px;
     }
+
+    .adb-navbar{
+      padding: 1.3rem .2rem;
+    }
 }
 
 @media (max-width: 480px) {
+    html[dir="ltr"] .adb-avatar-name{
+      padding: 10px 0;
+    }
     .adb-user-dropdown {
         min-width: 180px;
+        left: 17px;
     }
     
     .adb-user-dropdown .adb-dropdown-item {
-        padding: 16px 14px;
+        padding: 10px 14px;
+    }
+
+    [dir="ltr"] .adb-user-dropdown{
+        left: inherit;
+        right: 5px;
     }
 }
 
@@ -1331,11 +1344,11 @@ html[dir="ltr"] .login-form .input-group i.fa-light.fa-eye{
 
 @media (max-width: 480px) {
     .adb-dropdown-item {
-        padding: 15px 15px 15px 50px;
+        padding: 15px 37px 15px 50px;
     }
     
     [dir="ltr"] .adb-dropdown-item {
-        padding: 15px 50px 15px 15px;
+        padding: 15px 50px 15px 37px;
     }
 }
 
@@ -2234,7 +2247,7 @@ html[dir="ltr"] #editPasswordModal .trf-form #trf-file{
 /* Responsive Design */
 @media (max-width: 768px) {
   .banking-modal-body {
-    padding: 1.5rem 1rem 2rem;
+    padding: 50px 15px !important;
   }
   
   .banking-icon-container {
@@ -2285,6 +2298,7 @@ html[dir="ltr"] #editPasswordModal .trf-form #trf-file{
   .banking-info-section {
     padding: 0.8rem;
     margin-bottom: 1rem;
+    margin-bottom: -15px !important;
   }
   
   .banking-bank-name {
@@ -3790,6 +3804,11 @@ html[dir="ltr"] #editPasswordModal .trf-form #trf-file{
       
       .sdb_content_body {
           padding: 20px;
+      }
+
+      .sdb_item_txt p{
+        padding-left: 0;
+        padding-right: 0 !important;
       }
   }
 

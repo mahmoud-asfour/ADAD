@@ -54,7 +54,7 @@ $('.adb-avatar-name.adb-dropdown-toggle').on('click', function(e) {
 
 // Handle user dropdown item clicks
 $('.adb-user-dropdown .adb-dropdown-item').on('click', function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const action = $(this).find('span').text();
     console.log('User action clicked:', action);
     
@@ -153,40 +153,40 @@ $('.adb-user-dropdown .adb-dropdown-item').on('click', function(e) {
           
           // Update text content for English
           $('.adb-sidebar-title').text('Main Page');
-          $('.adb-nav-link span').each(function(index) {
-            const englishTexts = [
-              'Dashboard',
-              'Floors & Units List',
-              'Invoices List',
-              'Profile',
-              'Help & Support',
-              'Logout'
-            ];
-            if (englishTexts[index]) {
-              $(this).text(englishTexts[index]);
-            }
-          });
+          // $('.adb-nav-link span').each(function(index) {
+          //   const englishTexts = [
+          //     'Dashboard',
+          //     'Floors & Units List',
+          //     'Invoices List',
+          //     'Profile',
+          //     'Help & Support',
+          //     'Logout'
+          //   ];
+          //   if (englishTexts[index]) {
+          //     $(this).text(englishTexts[index]);
+          //   }
+          // });
           
           // Update stat labels
-          $('.adb-stat-label').each(function(index) {
-            const englishLabels = [
-              'Total Invoice Value',
-              'Paid Invoices Value',
-              'Unpaid Invoices Value',
-              'Pending Confirmation Value',
-              'Cancelled Invoices Value',
-              'Total Invoices Count',
-              'Paid Invoices Count',
-              'Unpaid Invoices Count',
-              'Pending Confirmation Count',
-              'Unit Floors Count',
-              'Electricity Meters Count',
-              'Water Meters Count'
-            ];
-            if (englishLabels[index]) {
-              $(this).text(englishLabels[index]);
-            }
-          });
+          // $('.adb-stat-label').each(function(index) {
+          //   const englishLabels = [
+          //     'Total Invoice Value',
+          //     'Paid Invoices Value',
+          //     'Unpaid Invoices Value',
+          //     'Pending Confirmation Value',
+          //     'Cancelled Invoices Value',
+          //     'Total Invoices Count',
+          //     'Paid Invoices Count',
+          //     'Unpaid Invoices Count',
+          //     'Pending Confirmation Count',
+          //     'Unit Floors Count',
+          //     'Electricity Meters Count',
+          //     'Water Meters Count'
+          //   ];
+          //   if (englishLabels[index]) {
+          //     $(this).text(englishLabels[index]);
+          //   }
+          // });
           
           // Update user info
           $('.adb-user-name').text('Waleed Salem Al-Jabri');
@@ -209,57 +209,57 @@ $('.adb-user-dropdown .adb-dropdown-item').on('click', function(e) {
           $html.attr('lang', 'ar').attr('dir', 'rtl');
           
           // Restore Arabic text content
-          $('.adb-sidebar-title').text('الصفحة الرئيسية');
-          $('.adb-nav-link span').each(function(index) {
-            const arabicTexts = [
-              'لوحة التحكم',
-              'قائمة الطوابق والوحدات',
-              'قائمة الفواتير',
-              'الملف الشخصي',
-              'المساعدة والدعم',
-              'تسجيل خروج'
-            ];
-            if (arabicTexts[index]) {
-              $(this).text(arabicTexts[index]);
-            }
-          });
+          // $('.adb-sidebar-title').text('الصفحة الرئيسية');
+          // $('.adb-nav-link span').each(function(index) {
+          //   const arabicTexts = [
+          //     'لوحة التحكم',
+          //     'قائمة الطوابق والوحدات',
+          //     'قائمة الفواتير',
+          //     'الملف الشخصي',
+          //     'المساعدة والدعم',
+          //     'تسجيل خروج'
+          //   ];
+          //   if (arabicTexts[index]) {
+          //     $(this).text(arabicTexts[index]);
+          //   }
+          // });
           
           // Restore Arabic stat labels
-          $('.adb-stat-label').each(function(index) {
-            const arabicLabels = [
-              'قيمة الفواتير الكلية',
-              'قيمة الفواتير المدفوعة',
-              'قيمة الفواتير غير المدفوعة',
-              'قيمة الفواتير في انتظار التأكيد',
-              'قيمة الفواتير المُلغاة',
-              'عدد الفواتير الكلي',
-              'عدد الفواتير المدفوعة',
-              'عدد الفواتير غير المدفوعة',
-              'عدد الفواتير في انتظار التأكيد',
-              'عدد طوابق الوحدة',
-              'عدد عدادات الكهرباء',
-              'عدد عدادات المياه'
-            ];
-            if (arabicLabels[index]) {
-              $(this).text(arabicLabels[index]);
-            }
-          });
+          // $('.adb-stat-label').each(function(index) {
+          //   const arabicLabels = [
+          //     'قيمة الفواتير الكلية',
+          //     'قيمة الفواتير المدفوعة',
+          //     'قيمة الفواتير غير المدفوعة',
+          //     'قيمة الفواتير في انتظار التأكيد',
+          //     'قيمة الفواتير المُلغاة',
+          //     'عدد الفواتير الكلي',
+          //     'عدد الفواتير المدفوعة',
+          //     'عدد الفواتير غير المدفوعة',
+          //     'عدد الفواتير في انتظار التأكيد',
+          //     'عدد طوابق الوحدة',
+          //     'عدد عدادات الكهرباء',
+          //     'عدد عدادات المياه'
+          //   ];
+          //   if (arabicLabels[index]) {
+          //     $(this).text(arabicLabels[index]);
+          //   }
+          // });
           
           // Restore Arabic user info
-          $('.adb-user-name').text('وليد سالم الجابري');
-          $('.adb-user-status').text('فعال');
+          // $('.adb-user-name').text('وليد سالم الجابري');
+          // $('.adb-user-status').text('فعال');
           
           // Restore Arabic footer
           // $('.adb-footer-text').first().html('<i class="fas fa-code"></i> تطوير: تطوير أنظمة المعلومات');
           // $('.adb-footer-text').last().text('© برج مجيد - جميع الحقوق محفوظة 2025');
           
           // Restore Arabic navigation
-          $('.adb-nav-links .adb-nav-link').each(function(index) {
-            const navTexts = ['الرئيسية', 'لوحة التحكم'];
-            if (navTexts[index]) {
-              $(this).text(navTexts[index]);
-            }
-          });
+          // $('.adb-nav-links .adb-nav-link').each(function(index) {
+          //   const navTexts = ['الرئيسية', 'لوحة التحكم'];
+          //   if (navTexts[index]) {
+          //     $(this).text(navTexts[index]);
+          //   }
+          // });
         }
         
         // Add animation class
