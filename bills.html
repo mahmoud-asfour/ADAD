@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bills</title>
+    <link rel="shortcut icon" type="img/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+  <!-- Main Content -->
+  <main class="adb-main">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <aside class="col-lg-3 col-xl-3 adb-sidebar">
+          <div class="adb-sidebar-content">
+
+            <!-- Logo -->
+            <div class="adb-sidebar-logo">
+                <a class="navbar-brand adb-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" class="adb-logo">
+
+                </a>
+                 <a class="navbar-brand adb-brand" href="#">
+                    <img src="images/logo-2.png" alt="Logo" class="adb-logo">
+
+                </a>
+            </div>
+            
+
+            <h5 class="adb-sidebar-title">القائمة الرئيسية</h5>
+            
+            <nav class="adb-sidebar-nav">
+              <ul class="list-unstyled">
+                <li class="adb-nav-item">
+                  <a href="dashboard.html" class="adb-nav-link">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>لوحة التحكم</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="units-meters.html" class="adb-nav-link">
+                    <i class="fas fa-list"></i>
+                    <span>قائمة الطوابق والعدادات</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="bills.html" class="adb-nav-link active">
+                    <i class="fas fa-envelope"></i>
+                    <span>قائمة الفواتير</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="profile.html" class="adb-nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>الملف الشخصي</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                    <a href="#" class="adb-nav-link adb-dropdown-toggle" data-adb-toggle="dropdown">
+                        <i class="fas fa-question-circle"></i>
+                        <span>المساعدة والدعم</span>
+                        <i class="fas fa-chevron-down adb-arrow"></i>
+                    </a>
+                    <div class="adb-dropdown-menu">
+                        <a class="adb-dropdown-item" href="#">من نحن</a>
+                        <a class="adb-dropdown-item" href="#">الشروط والأحكام</a>
+                        <a class="adb-dropdown-item" href="#">الأسئلة الشائعة</a>
+                        <a class="adb-dropdown-item" href="#">سياسة الخصوصية</a>
+                        <a class="adb-dropdown-item" href="#">تواصل معنا</a>
+                    </div>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="#signOutModal" class="adb-nav-link"  role="button" data-bs-toggle="modal" data-bs-target="#signOutModal">
+                    <i class="fa-regular fa-right-from-bracket"></i>
+                    <span>تسجيل خروج</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Dashboard Content -->
+        <section class="col-lg-9 col-xl-9 adb-content">
+
+        <!-- Header -->
+        <header class="adb-header">
+            <nav class="navbar navbar-expand-lg adb-navbar">
+            <div class="container-fluid">
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar-toggler adb-mobile-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#adbNavbar">
+                <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Top Navigation -->
+                <div class="collapse navbar-collapse" id="adbNavbar">
+                
+                    <!-- User Info -->
+                    <div class="adb-user-info">
+                        <div class="adb-account-data">
+                            <div class="adb-user-details">
+                                <span class="adb-account-status">حالة الحساب</span>
+                                <span class="adb-user-status"><span>فعال</span></span>
+                            </div>
+                            
+                            <div class="adb-account-date-create">
+                                <span class="adb-account-date-txt">تاريخ إنشاء الحساب</span>
+                                <span class="adb-account-date">2025-05-01</span>
+                            </div> 
+                        </div>
+                        
+                        <div class="adb-user-info-lang">
+                            <button class="btn adb-lang-toggle" >
+                                <i class="fa-regular fa-globe"></i>
+                            </button>
+                            <div class="adb-avatar-name adb-dropdown-toggle" data-adb-toggle="dropdown">
+                                <span class="adb-user-avatar">
+                                    <img src="images/avatar.png" alt="User" class="rounded-circle">
+                                </span>
+                                <span class="adb-user-name">وليد سالم الجابري</span>
+                                <i class="fas fa-chevron-down adb-arrow"></i>
+                            </div>
+                            <div class="adb-dropdown-menu adb-user-dropdown">
+                                <a class="adb-dropdown-item" href="dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>لوحة التحكم</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="units-meters.html">
+                                    <i class="fas fa-list"></i>
+                                    <span>قائمة الطوابق والعدادات</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="bills.html">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>قائمة الفواتير</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="profile.html">
+                                    <i class="fas fa-user"></i>
+                                    <span>الملف الشخصي</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="bills.html">
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>المساعدة والدعم</span>
+                                </a>
+                                <hr class="adb-dropdown-divider">
+                                <a class="adb-dropdown-item adb-logout" href="#"  role="button" data-bs-toggle="modal" data-bs-target="#signOutModal">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>تسجيل الخروج</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <div class="breadcrumb-titles">
+            <!-- Breadcrumb -->
+            <nav aria-label="adb-breadcrumb">
+                <ol class="breadcrumb adb-breadcrumb justify-content-end">
+                <li class="breadcrumb-item"><a href="dashboard.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">قائمة الفواتير </li>
+                </ol>
+            </nav>
+            <!-- Page Title -->
+             <div class="adb-title-back-btn">
+                <h2 class="adb-page-title"> قائمة الفواتير  </h2>    
+                <button type="button" class="adb-show-banks" data-bs-toggle="modal" data-bs-target="#bankingInfoModal">
+                    عرض حساباتنا البنكية
+                </button>
+            </div>
+        </div>
+
+        <!-- Chart Info Panel Section -->
+        <div class="row">
+            <!-- Info Panel -->
+            <div class="col-lg-12 col-md-12 col-12">
+                 <!-- Form Section -->
+                <div class="uif-form-section">
+                    <div class="row align-items-center g-3">
+                    
+                        <!-- Date Inputs Section -->
+                        <div class="col-12 col-md-6">
+                            <div class="row g-2">
+                                <div class="col-md-6 col-12">
+                                    <div class="uif-date-wrapper">
+                                        <label class="uif-date-label mb-1">الفترة الزمنية</label>
+                                        <div class="uif-inputs">
+                                            <input type="text" class="form-control uif-date-input" id="uifDateTo" placeholder="من">
+                                            <input type="text" class="form-control uif-date-input" id="uifDateFrom" placeholder="الى">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown Section -->
+                        <div class="col-12 col-md-6">
+                            <div class="uif-dropdown-wrapper">
+                                <label class="uif-dropdown-label mb-2"> الحالة </label>
+                                <div class="dropdown">
+                                    <button class="btn uif-dropdown-btn dropdown-toggle w-100" type="button" id="uifDropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-chevron-down uif-dropdown-icon"></i>
+                                    </button>
+                                    <ul class="dropdown-menu uif-dropdown-menu w-100" aria-labelledby="uifDropdownMenu">
+                                    <li><a class="dropdown-item" href="#">خيار 1</a></li>
+                                    <li><a class="dropdown-item" href="#">خيار 2</a></li>
+                                    <li><a class="dropdown-item" href="#">خيار 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="uif-action-buttons d-flex gap-3 justify-content-start">
+                            <button type="button" class="btn uif-btn-reset">إعادة ضبط</button>
+                            <button type="button" class="btn uif-btn-primary">فلترة</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="adb-history-title">
+            <h2 class="adb-page-title"> نتائج البحث</h2>    
+        </div>
+        <!-- Stats Cards Row 1 -->
+        <div class="row adb-stats-row">
+
+            <div class="table-responsive">
+                <table class="table units-data-table" id="unitsTable">
+                <thead class="units-table-head">
+                    <tr>
+                        <th scope="col" class="units-th-number">#</th>
+                        <th scope="col" class="units-th-date">تاريخ  ووقت الإنشاء </th>
+                        <th scope="col" class="units-th-id"> الرقم التعريفى </th>
+                        <th scope="col" class="units-th-cost">المبلغ المطلوب </th>
+                        <th scope="col" class="units-th-status">الحالة  </th>
+                        <th scope="col" class="units-th-bill">الفاتورة  </th>
+                        <th scope="col" class="units-th-attachment">المرفقات  </th>
+                        <th scope="col" class="units-th-bill-payment">  </th>
+                    </tr>
+                </thead>
+                <tbody class="units-table-body">
+
+                    <tr class="units-table-row">
+                        <td class="units-td-number">1</td>
+                        <td class="units-td-date">2025/07/01 - 10:39</td>
+                        <td class="units-td-id"> INV-1234</td>
+                        <td class="units-td-cost">30 ر.س</td>
+                        <td class="units-td-status"><span class="waiting-status">فى انتظار الدفع </span> </td>                        
+                        <td class="units-td-bill">
+                            <a href="#" download class="disabled-download"><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-attachment">
+                            <a href="#" download class="disabled-download"><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-bill-payment">
+                            <button type="button" class="btn-pay-bill" data-bs-toggle="modal" data-bs-target="#billPaymentModal">
+                            تسديد الفاتورة
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="units-table-row">
+                        <td class="units-td-number">1</td>
+                        <td class="units-td-date">2025/07/01 - 10:39</td>
+                        <td class="units-td-id"> INV-1234</td>
+                        <td class="units-td-cost">30 ر.س</td>
+                        <td class="units-td-status"><span class="waiting-status">فى انتظار الدفع </span> </td>                        
+                        <td class="units-td-bill">
+                            <a href="#" download class="disabled-download"><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-attachment">
+                            <a href="#" download class="disabled-download"><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-bill-payment">
+                            <button type="button" class="btn-pay-bill" data-bs-toggle="modal" data-bs-target="#billPaymentModal">
+                            تسديد الفاتورة
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="units-table-row">
+                        <td class="units-td-number">1</td>
+                        <td class="units-td-date">2025/07/01 - 10:39</td>
+                        <td class="units-td-id"> INV-1234</td>
+                        <td class="units-td-cost">30 ر.س</td>
+                        <td class="units-td-status"> <span class="paid-status">  تم  الدفع  </span></td>                        
+                        <td class="units-td-bill">
+                            <a href="#" download><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-attachment">
+                            <a href="#" download><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-bill-payment">
+                            <button type="button" class="btn-pay-bill invisible" data-bs-toggle="modal" data-bs-target="#billPaymentModal">
+                            تسديد الفاتورة
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="units-table-row">
+                        <td class="units-td-number">1</td>
+                        <td class="units-td-date">2025/07/01 - 10:39</td>
+                        <td class="units-td-id"> INV-1234</td>
+                        <td class="units-td-cost">30 ر.س</td>
+                        <td class="units-td-status"> <span class="paid-confirm-status">  تم تأكيد الدفع     </span> </td>                        
+                        <td class="units-td-bill">
+                            <a href="#" download><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-attachment">
+                            <a href="#" download><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-bill-payment">
+                            <button type="button" class="btn-pay-bill invisible" data-bs-toggle="modal" data-bs-target="#billPaymentModal">
+                            تسديد الفاتورة
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="units-table-row">
+                        <td class="units-td-number">1</td>
+                        <td class="units-td-date">2025/07/01 - 10:39</td>
+                        <td class="units-td-id"> INV-1234</td>
+                        <td class="units-td-cost">30 ر.س</td>
+                        <td class="units-td-status"> <span class="canceled-status"> ملغية </span>   </td>                        
+                        <td class="units-td-bill">
+                            <a href="#" download class="disabled-download"><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-attachment">
+                            <a href="#" download class="disabled-download"><i class="fa-light fa-download "></i></a>
+                        </td>
+                        <td class="units-td-bill-payment">
+                            <button type="button" class="btn-pay-bill invisible" data-bs-toggle="modal" data-bs-target="#billPaymentModal">
+                            تسديد الفاتورة
+                            </button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+          <!-- Footer -->
+          <footer class="adb-footer">
+            <div class="row">
+                <div class="col-md-6 col-6">
+                    <p class="adb-footer-text footer-right">
+                    برج مجدول - شركة أوتاد العقارية 2025 ©
+                    </p>
+                </div>
+                <div class="col-md-6 col-6">
+                    <p class="adb-footer-text footer-left">
+                        تطوير
+                        <a href="https://tasawk.com.sa/" target="_blank" class="anc_tasawk"> <img src="images/tasawk.png" alt="tasawk"> </a>
+                    </p>
+                </div>  
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Banking Information Modal -->
+  <div class="modal fade" id="bankingInfoModal" tabindex="-1" aria-labelledby="bankingInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content banking-modal-content">
+        <!-- <div class="modal-header banking-modal-header border-0">
+          <button type="button" class="btn-close banking-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body banking-modal-body text-center p-4">
+          <!-- Bank Icon -->
+          <div class="banking-icon-container mb-4">
+            <i class="fa-thin fa-building-columns"></i>
+          </div>
+          
+          <!-- Title -->
+          <h4 class="banking-title mb-4">حساباتنا البنكية</h4>
+          
+          <!-- Al Rajhi Bank Info -->
+          <div class="banking-info-section mb-4">
+            <h5 class="banking-bank-name">مصرف الراجحي</h5>
+            <div class="banking-info-item">
+              <span class="banking-label">اسم المستفيد:</span>
+              <span class="banking-value">برج مجدول</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الحساب:</span>
+              <span class="banking-value">1230000123FE01789</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الآيبان:</span>
+              <span class="banking-value">SA2980000162000001234567</span>
+            </div>
+          </div>
+          
+          <!-- National Bank Info -->
+          <div class="banking-info-section mb-4">
+            <h5 class="banking-bank-name">البنك الأهلي السعودي</h5>
+            <div class="banking-info-item">
+              <span class="banking-label">اسم المستفيد:</span>
+              <span class="banking-value">برج مجدول</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الحساب:</span>
+              <span class="banking-value">10000123FE01789</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الآيبان:</span>
+              <span class="banking-value">SA2310000010000012345678</span>
+            </div>
+          </div>
+          
+          <!-- Follow Button -->
+          <button type="button" class="btn banking-follow-btn" data-bs-dismiss="modal" aria-label="Close"> متابعة </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Bill payment Modal -->
+  <div class="modal fade" id="billPaymentModal" tabindex="-1" aria-labelledby="billPaymentLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content banking-modal-content">
+        <!-- <div class="modal-header banking-modal-header border-0">
+          <button type="button" class="btn-close banking-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body banking-modal-body text-center p-4">
+          <!-- Bank Icon -->
+          <div class="banking-icon-container mb-4">
+            <i class="fa-thin fa-building-columns"></i>
+          </div>
+          
+          <!-- Title -->
+          <h4 class="banking-title mb-4"> تسديد الفاتورة</h4>
+          <p class="trf-text">
+            قم بالتحويل أولا علي أحد حساباتنا البنكية بالأسفل ثم ارفق صورة التحويل
+          </p>
+          
+          <!-- upload form -->
+        <div class="trf-form container mt-4" dir="rtl">
+            <form id="trf-upload-form" enctype="multipart/form-data">
+                <div class="mb-3">
+                <label for="trf-file" class="form-label">صورة التحويل <span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <input class="form-control" type="file" id="trf-file">
+                    <label class="input-group-text" for="trf-file">
+                    <i class="fa-light fa-arrow-up-from-bracket"></i> رفع ملف
+                    </label>
+                </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-3 justify-content-end">
+                    <button type="button" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#successSentModal">
+                        إرسال
+                    </button>
+                    <button type="button" class="btn btn-light trf-cancel" data-bs-dismiss="modal" aria-label="Close">إلغاء العملية </button>
+                </div>
+            </form>
+        </div>
+
+
+          <!-- Al Rajhi Bank Info -->
+          <div class="banking-info-section mb-4">
+            <h5 class="banking-bank-name">مصرف الراجحي</h5>
+            <div class="banking-info-item">
+              <span class="banking-label">اسم المستفيد:</span>
+              <span class="banking-value">برج مجدول</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الحساب:</span>
+              <span class="banking-value">1230000123FE01789</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الآيبان:</span>
+              <span class="banking-value">SA2980000162000001234567</span>
+            </div>
+          </div>
+          
+          <!-- National Bank Info -->
+          <div class="banking-info-section mb-4">
+            <h5 class="banking-bank-name">البنك الأهلي السعودي</h5>
+            <div class="banking-info-item">
+              <span class="banking-label">اسم المستفيد:</span>
+              <span class="banking-value">برج مجدول</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الحساب:</span>
+              <span class="banking-value">10000123FE01789</span>
+            </div>
+            <div class="banking-info-item">
+              <span class="banking-label">رقم الآيبان:</span>
+              <span class="banking-value">SA2310000010000012345678</span>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- Success sent Modal -->
+   <div class="modal fade" id="successSentModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content banking-modal-content">
+        <!-- <div class="modal-header banking-modal-header border-0">
+          <button type="button" class="btn-close banking-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body banking-modal-body text-center p-4">
+          <!-- Bank Icon -->
+          <div class="banking-icon-container mb-4">
+            <i class="fa-thin fa-circle-check"></i>
+          </div>
+          <!-- Title -->
+          <h4 class="banking-title mb-4"> تم الإرسال بنجاح</h4>
+          <!-- Text -->
+           <p class="trf-text">
+            سيتم مراجعة إيصال الدفع المرفق من قبل الإدارة وتعديل حالة الفاتورة في أقرب وقت ممكن          
+           </p>
+          <!-- Follow Button -->
+          <button type="button" class="btn banking-follow-btn" data-bs-dismiss="modal" aria-label="Close"> متابعة </button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   
+    <!-- sign out Modal -->
+  <div class="modal fade" id="signOutModal" tabindex="-1" aria-labelledby="signOutModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content banking-modal-content">
+        <div class="modal-body banking-modal-body text-center p-4">
+          <!-- Bank Icon -->
+          <div class="banking-icon-container mb-4">
+            <i class="fa-light fa-arrow-right-from-bracket"></i>
+          </div>
+          
+          <!-- Title -->
+          <h4 class="banking-title mb-4"> تسجيل خروج </h4>
+          <p class="trf-text">
+            هل أنت متأكد من تسجيل الخروج؟
+          </p>
+          
+          <!-- form -->
+        <div class="trf-form container mt-4" dir="rtl">
+            <form id="trf-upload-form" enctype="multipart/form-data">
+                <div class="d-flex gap-2 mt-3 justify-content-end">
+                    <button type="submit" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#successSentModal">
+                        تأكيد
+                    </button>
+                    <button type="button" class="btn btn-light trf-cancel" data-bs-dismiss="modal" aria-label="Close">إلغاء العملية </button>
+                </div>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+   <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

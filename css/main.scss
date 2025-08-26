@@ -1,0 +1,109 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+
+@import "sass/base/typography";
+@import "sass/base/base";
+@import "sass/base/reset";
+
+@import "sass/objects/button";
+@import "sass/objects/shape";
+@import "sass/objects/titles";
+@import "sass/objects/slider";
+@import "sass/objects/form";
+
+@import "sass/components/main";
+@import "sass/components/about";
+@import "sass/components/services";
+@import "sass/components/features";
+@import "sass/components/projects";
+@import "sass/components/testimonials";
+@import "sass/components/contact";
+
+@import "sass/layout/header";
+@import "sass/layout/navbar";
+@import "sass/layout/footer";
+@import "sass/layout/fixed_contacts";
+
+@import "sass/pages/home";
+
+header {
+  &.header-section {
+    &.fixed {
+      box-shadow: none;
+      .header {
+        padding: 20px;
+        @include xs {
+          padding: 7px 15px;
+        }
+      }
+      .logo {
+        width: 190px;
+        @include md {
+          width: 150px;
+        }
+        @include sm {
+          width: 120px;
+        }
+        @include xs {
+          width: 100px;
+        }
+      }
+      .header-btn {
+        height: 40px;
+        padding: 0 15px;
+        @include md {
+          font-size: 12px;
+          padding: 0 10px;
+          height: 40px;
+        }
+        @include sm {
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+
+.fixed_contact-item {
+  &::before {
+    display: none;
+  }
+  &:hover {
+    animation: none;
+  }
+
+  &.whatsapp {
+    animation: pulse-green 2s infinite;
+  }
+  &.phone {
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(24, 123, 205, 0.91);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(24, 123, 205, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(24, 123, 205, 0);
+  }
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(77, 194, 71, 0.9);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(77, 194, 71, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(77, 194, 71, 0);
+  }
+}

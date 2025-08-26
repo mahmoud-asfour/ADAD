@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="shortcut icon" type="img/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+  <!-- Main Content -->
+  <main class="adb-main">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <aside class="col-lg-3 col-xl-3 adb-sidebar">
+          <div class="adb-sidebar-content">
+
+            <!-- Logo -->
+            <div class="adb-sidebar-logo">
+                <a class="navbar-brand adb-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" class="adb-logo">
+
+                </a>
+                 <a class="navbar-brand adb-brand" href="#">
+                    <img src="images/logo-2.png" alt="Logo" class="adb-logo">
+
+                </a>
+            </div>
+            
+
+            <h5 class="adb-sidebar-title">القائمة الرئيسية</h5>
+            
+            <nav class="adb-sidebar-nav">
+              <ul class="list-unstyled">
+                <li class="adb-nav-item">
+                  <a href="dashboard.html" class="adb-nav-link active">
+
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>لوحة التحكم</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="units-meters.html" class="adb-nav-link">
+                    <i class="fas fa-list"></i>
+                    <span>قائمة الطوابق والعدادات</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="bills.html" class="adb-nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>قائمة الفواتير</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="profile.html" class="adb-nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>الملف الشخصي</span>
+                  </a>
+                </li>
+                <li class="adb-nav-item">
+                    <a href="#" class="adb-nav-link adb-dropdown-toggle" data-adb-toggle="dropdown">
+                        <i class="fas fa-question-circle"></i>
+                        <span>المساعدة والدعم</span>
+                        <i class="fas fa-chevron-down adb-arrow"></i>
+                    </a>
+                    <div class="adb-dropdown-menu">
+                        <a class="adb-dropdown-item" href="#">من نحن</a>
+                        <a class="adb-dropdown-item" href="#">الشروط والأحكام</a>
+                        <a class="adb-dropdown-item" href="#">الأسئلة الشائعة</a>
+                        <a class="adb-dropdown-item" href="#">سياسة الخصوصية</a>
+                        <a class="adb-dropdown-item" href="#">تواصل معنا</a>
+                    </div>
+                </li>
+                <li class="adb-nav-item">
+                  <a href="#signOutModal" class="adb-nav-link"  role="button" data-bs-toggle="modal" data-bs-target="#signOutModal">
+                    <i class="fa-regular fa-right-from-bracket"></i>
+                    <span>تسجيل خروج</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Dashboard Content -->
+        <section class="col-lg-9 col-xl-9 adb-content">
+
+        <!-- Header -->
+        <header class="adb-header">
+            <nav class="navbar navbar-expand-lg adb-navbar">
+            <div class="container-fluid">
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar-toggler adb-mobile-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#adbNavbar">
+                <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Top Navigation -->
+                <div class="collapse navbar-collapse" id="adbNavbar">
+                
+                    <!-- User Info -->
+                    <div class="adb-user-info">
+                        <div class="adb-account-data">
+                            <div class="adb-user-details">
+                                <span class="adb-account-status">حالة الحساب</span>
+                                <span class="adb-user-status"><span>فعال</span></span>
+                            </div>
+                            
+                            <div class="adb-account-date-create">
+                                <span class="adb-account-date-txt">تاريخ إنشاء الحساب</span>
+                                <span class="adb-account-date">2025-05-01</span>
+                            </div> 
+                        </div>
+                        
+                        <div class="adb-user-info-lang">
+                            <button class="btn adb-lang-toggle">
+                                <i class="fa-regular fa-globe"></i>
+                            </button>
+                            <div class="adb-avatar-name adb-dropdown-toggle" data-adb-toggle="dropdown">
+                                <span class="adb-user-avatar">
+                                    <img src="images/avatar.png" alt="User" class="rounded-circle">
+                                </span>
+                                <span class="adb-user-name">وليد سالم الجابري</span>
+                                <i class="fas fa-chevron-down adb-arrow"></i>
+                            </div>
+                            <div class="adb-dropdown-menu adb-user-dropdown">
+                                <a class="adb-dropdown-item" href="dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>لوحة التحكم</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="units-meters.html">
+                                    <i class="fas fa-list"></i>
+                                    <span>قائمة الطوابق والعدادات</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="bills.html">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>قائمة الفواتير</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="profile.html">
+                                    <i class="fas fa-user"></i>
+                                    <span>الملف الشخصي</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="bills.html">
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>المساعدة والدعم</span>
+                                </a>
+                                <hr class="adb-dropdown-divider">
+                                <a class="adb-dropdown-item adb-logout" href="#"  role="button" data-bs-toggle="modal" data-bs-target="#signOutModal">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>تسجيل الخروج</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <div class="breadcrumb-titles">
+            <!-- Breadcrumb -->
+            <nav aria-label="adb-breadcrumb">
+                <ol class="breadcrumb adb-breadcrumb justify-content-end">
+                <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">الملف الشخصي</li>
+                </ol>
+            </nav>
+            <!-- Page Title -->
+            <h2 class="adb-page-title">الملف الشخصي </h2>    
+        </div>
+
+        <!-- Stats Cards Row 1 -->
+        <div class="row adb-stats-row">
+
+            <div class="pf-profile container mt-4" dir="rtl">
+                <form id="pf-form" class="card p-4">
+                    <div class="row g-3">
+
+                    <!-- username -->
+                    <div class="col-md-6">
+                        <label for="pf-username" class="form-label">
+                        اسم المستخدم <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" id="pf-username" class="form-control pf-input" >
+                    </div>
+
+                    <!-- email-->
+                    <div class="col-md-6">
+                        <label for="pf-email" class="form-label">
+                        البريد الإلكتروني <span class="text-danger">*</span>
+                        </label>
+                        <input type="email" id="pf-email" class="form-control pf-input" >
+                    </div>
+
+                    <!-- phone-->
+                    <div class="col-md-6 col-12">
+                        <label for="pf-phone" class="form-label">
+                        رقم الجوال <span class="text-danger">*</span>
+                        </label>
+                        <div class="input-group pf-phone-group">
+                        <!-- <input type="tel" id="pf-phone" class="form-control pf-input"> -->
+                        <input type="tel"name="phone"aria-label="phone"class="form-control pf-input"intlTelInput/>
+
+                        <button type="button" class="btn btn-light pf-edit-btn" data-bs-toggle="modal" data-bs-target="#editPhoneModal">
+                            <i class="fa-regular fa-pen-to-square"></i> تعديل
+                        </button>
+                        </div>
+                    </div>
+
+                    <!-- change password-->
+                    <div class="col-md-12">
+                        <a href="#editPasswordModal" role="button" data-bs-toggle="modal" data-bs-target="#editPasswordModal" class="pf-change-password">تعديل كلمة المرور</a>
+                    </div>
+
+                    <!-- save edits-->
+                    <div class="col-12">
+                        <button type="submit" class="btn pf-save-btn">حفظ التعديلات</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+          
+        <!-- Edit phone number Modal -->
+        <div class="modal fade" id="editPhoneModal" tabindex="-1" aria-labelledby="editPhoneLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content banking-modal-content">
+                <div class="modal-body banking-modal-body text-center p-4">
+                
+                <!-- Title -->
+                <h4 class="banking-title mb-4"> تعديل رقم الجوال </h4>
+                
+                <!-- Edit phone form -->
+                <div class="trf-form container mt-4" dir="rtl">
+                    <form id="trf-upload-form" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="pf-phone" class="form-label">
+                            رقم الجوال <span class="text-danger">*</span>
+                            </label>
+                            <input type="tel"name="phone"aria-label="phone" placeholder="5xxxxxxxx" class="form-control pf-input"intlTelInput/>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-3 justify-content-end">
+                            <button type="button" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#confirmCodeModal">
+                                إرسال
+                            </button>
+                            <a href="profile.html" type="button" class="btn btn-light trf-cancel">إلغاء العملية</a>
+                        </div>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+         <!-- Confirmation code for phone number Modal -->
+        <div class="modal fade" id="confirmCodeModal" tabindex="-1" aria-labelledby="confirmCodeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content banking-modal-content">
+                <div class="modal-body banking-modal-body text-center p-4">
+                
+                <!-- Title -->
+                <h4 class="banking-title mb-4"> تعديل رقم الجوال </h4>
+                <p class="trf-text">
+                    قم بإدخال كود التحقق المرسل إلى رقم جوالك
+                </p>
+                
+                <!-- confirm code form -->
+                <div class="trf-form container mt-4" dir="ltr">
+                    <form id="trf-upload-form" enctype="multipart/form-data">
+                        <div class="otp-container text-center mt-4" dir="ltr">
+                            <div class="d-flex justify-content-center gap-2">
+                                <input type="text" class="otp-input" maxlength="1" dir="ltr" inputmode="numeric" pattern="[0-9]*">
+                                <input type="text" class="otp-input" maxlength="1" dir="ltr" inputmode="numeric" pattern="[0-9]*">
+                                <input type="text" class="otp-input" maxlength="1" dir="ltr" inputmode="numeric" pattern="[0-9]*">
+                                <input type="text" class="otp-input" maxlength="1" dir="ltr" inputmode="numeric" pattern="[0-9]*">
+                            </div>
+                            <div class="otp-timer mt-3" id="otp-timer">02:00</div>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-3 justify-content-end">
+                            <button type="button" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#successEditPhoneModal">
+                                تحقق
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+        
+        <!-- Success phone edit Modal -->
+        <div class="modal fade" id="successEditPhoneModal" tabindex="-1" aria-labelledby="successEditPhoneModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content banking-modal-content">
+                <!-- <div class="modal-header banking-modal-header border-0">
+                <button type="button" class="btn-close banking-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body banking-modal-body text-center p-4">
+                <!-- Bank Icon -->
+                <div class="banking-icon-container mb-4">
+                    <i class="fa-thin fa-circle-check"></i>
+                </div>
+                <!-- Title -->
+                <h4 class="banking-title mb-4"> تم تعديل رقم الجوال بنجاح</h4>
+                <!-- Text -->
+                <p class="trf-text">
+                   يمكنك الآن المتابعة باستخدام رقم الجوال الجديد         
+                </p>
+                <!-- Follow Button -->
+                <button type="button" class="btn banking-follow-btn" data-bs-dismiss="modal" aria-label="Close"> متابعة </button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Edit password form Modal -->
+        <div class="modal fade" id="editPasswordModal" tabindex="-1" aria-labelledby="editPasswordLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content banking-modal-content">
+                <div class="modal-body banking-modal-body text-center p-4">
+                
+                <!-- Title -->
+                <h4 class="banking-title mb-4">  تعديل كلمة المرور</h4>
+                
+                <!-- edit password form -->
+                <div class="trf-form container mt-4" dir="rtl">
+                    <form id="trf-upload-form" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="trf-file" class="form-label">كلمة المرور الحالية  <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input class="form-control" type="password" id="trf-file">
+                                <label class="input-group-text" for="trf-file">
+                                    <i class="fa-light fa-eye"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="trf-file" class="form-label">كلمة المرور الجديدة <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input class="form-control" type="password" id="trf-file">
+                                <label class="input-group-text" for="trf-file">
+                                    <i class="fa-light fa-eye"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="trf-file" class="form-label">تأكيد كلمة المرور الجديدة <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input class="form-control" type="password" id="trf-file">
+                                <label class="input-group-text" for="trf-file">
+                                    <i class="fa-light fa-eye"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-3 justify-content-end">
+                            <button type="button" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#successSentModal">
+                                تأكيد
+                            </button>
+                            <button type="button" class="btn btn-light trf-cancel" data-bs-dismiss="modal" aria-label="Close">إلغاء العملية </button>
+                        </div>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        
+    <!-- sign out Modal -->
+  <div class="modal fade" id="signOutModal" tabindex="-1" aria-labelledby="signOutModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content banking-modal-content">
+        <div class="modal-body banking-modal-body text-center p-4">
+          <!-- Bank Icon -->
+          <div class="banking-icon-container mb-4">
+            <i class="fa-light fa-arrow-right-from-bracket"></i>
+          </div>
+          
+          <!-- Title -->
+          <h4 class="banking-title mb-4"> تسجيل خروج </h4>
+          <p class="trf-text">
+            هل أنت متأكد من تسجيل الخروج؟
+          </p>
+          
+          <!-- form -->
+        <div class="trf-form container mt-4" dir="rtl">
+            <form id="trf-upload-form" enctype="multipart/form-data">
+                <div class="d-flex gap-2 mt-3 justify-content-end">
+                    <button type="submit" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#successSentModal">
+                        تأكيد
+                    </button>
+                    <button type="button" class="btn btn-light trf-cancel" data-bs-dismiss="modal" aria-label="Close">إلغاء العملية </button>
+                </div>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+          <!-- Footer -->
+          <footer class="adb-footer">
+            <div class="row">
+                <div class="col-md-6 col-6">
+                    <p class="adb-footer-text footer-right">
+                    برج مجدول - شركة أوتاد العقارية 2025 ©
+                    </p>
+                </div>
+                <div class="col-md-6 col-6">
+                    <p class="adb-footer-text footer-left">
+                        تطوير
+                        <a href="https://tasawk.com.sa/" target="_blank" class="anc_tasawk"> <img src="images/tasawk.png" alt="tasawk"> </a>
+                    </p>
+                </div>  
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+   <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
