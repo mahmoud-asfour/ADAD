@@ -1032,6 +1032,22 @@ html[dir="ltr"] .login-form .input-group i.fa-light.fa-eye{
     .adb-navbar{
       padding: 1.3rem .2rem;
     }
+
+    .login-form .input-group{
+      width: auto;
+    }
+
+    .login-form-section .intl-tel-input{
+      width: 100%;
+    }
+
+    .login-form .form-group{
+      width: 100%;
+    }
+
+    .btn-login {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1363,6 +1379,16 @@ html[dir="ltr"] .adb-sidebar-content{
     
     [dir="ltr"] .adb-dropdown-item {
         padding: 15px 50px 15px 37px;
+    }
+
+    .adb-sidebar-logo{
+      gap: 5px;
+    }
+
+    .adb-logo {
+      height: 90px;
+      width: 90px;
+      object-fit: contain;
     }
 }
 
