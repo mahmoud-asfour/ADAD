@@ -2835,6 +2835,10 @@ html[dir="ltr"] #editPasswordModal .trf-form #trf-file{
   opacity: 1;
 }
 
+.adb-panel-title.chart{
+  margin-bottom: 0;
+}
+
 .adb-info-grid {
   display: flex;
   flex-direction: column;
