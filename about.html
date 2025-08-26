@@ -66,21 +66,21 @@
                   </a>
                 </li>
                 <li class="adb-nav-item">
-                    <a href="#" class="adb-nav-link adb-dropdown-toggle" data-adb-toggle="dropdown">
+                    <a href="#" class="adb-nav-link adb-dropdown-toggle active" data-adb-toggle="dropdown">
                         <i class="fas fa-question-circle"></i>
                         <span>المساعدة والدعم</span>
                         <i class="fas fa-chevron-down adb-arrow"></i>
                     </a>
                     <div class="adb-dropdown-menu">
-                        <a class="adb-dropdown-item" href="#">من نحن</a>
-                        <a class="adb-dropdown-item" href="#">الشروط والأحكام</a>
-                        <a class="adb-dropdown-item" href="#">الأسئلة الشائعة</a>
-                        <a class="adb-dropdown-item" href="#">سياسة الخصوصية</a>
-                        <a class="adb-dropdown-item" href="#">تواصل معنا</a>
+                        <a class="adb-dropdown-item active" href="about.html">من نحن</a>
+                        <a class="adb-dropdown-item" href="terms.html">الشروط والأحكام</a>
+                        <a class="adb-dropdown-item" href="faq.html">الأسئلة الشائعة</a>
+                        <a class="adb-dropdown-item" href="privacy.html">سياسة الخصوصية</a>
+                        <a class="adb-dropdown-item" href="contact.html">تواصل معنا</a>
                     </div>
                 </li>
                 <li class="adb-nav-item">
-                  <a href="#" class="adb-nav-link">
+                  <a href="#signOutModal" class="adb-nav-link"  role="button" data-bs-toggle="modal" data-bs-target="#signOutModal">
                     <i class="fa-regular fa-right-from-bracket"></i>
                     <span>تسجيل خروج</span>
                   </a>
@@ -121,14 +121,42 @@
                         </div>
                         
                         <div class="adb-user-info-lang">
-                            <button class="btn adb-lang-toggle" >
+                            <button class="btn adb-lang-toggle">
                                 <i class="fa-regular fa-globe"></i>
                             </button>
-                            <div class="adb-avatar-name">
+                            <div class="adb-avatar-name adb-dropdown-toggle" data-adb-toggle="dropdown">
                                 <span class="adb-user-avatar">
                                     <img src="images/avatar.png" alt="User" class="rounded-circle">
                                 </span>
                                 <span class="adb-user-name">وليد سالم الجابري</span>
+                                <i class="fas fa-chevron-down adb-arrow"></i>
+                            </div>
+                            <div class="adb-dropdown-menu adb-user-dropdown">
+                                <a class="adb-dropdown-item" href="dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>لوحة التحكم</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="units-meters.html">
+                                    <i class="fas fa-list"></i>
+                                    <span>قائمة الطوابق والعدادات</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="bills.html">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>قائمة الفواتير</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="profile.html">
+                                    <i class="fas fa-user"></i>
+                                    <span>الملف الشخصي</span>
+                                </a>
+                                <a class="adb-dropdown-item" href="bills.html">
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>المساعدة والدعم</span>
+                                </a>
+                                <hr class="adb-dropdown-divider">
+                                <a class="adb-dropdown-item adb-logout" href="#"  role="button" data-bs-toggle="modal" data-bs-target="#signOutModal">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>تسجيل الخروج</span>
+                                </a>
                             </div>
                         </div>
                         
@@ -150,36 +178,67 @@
             <h2 class="adb-page-title">من نحن </h2>    
         </div>
 
-        <!-- content -->
-        <div class="row adb-stats-row">
+        <!-- Main Content -->
+        <main class="adb-main-content">
+                
+                <div class="adb-description-box">
 
-            <div class="col-lg-3 col-md-6 col-6 mb-4">
-              <div class="card adb-stat-card adb-stat-card-blue">
-                <div class="card-body">
-                  <div class="adb-stat-icon">
-                    <i class="fas fa-building"></i>
-                  </div>
-                  <div class="adb-stat-content">
-                    <p class="adb-stat-label">قيمة الفواتير الكلية</p>
-                    <h3 class="adb-stat-number">6,500</h3>
-                  </div>
+                    <img class="img" src="images/about-bg.png" />
+
+                    <div class="adb-description-text">
+
+                        <h2 class="about-title">مرحبًا بك في مجدول فوترة</h2>
+
+                        <div class="about-txt">
+                            <p>
+                                النظام الذكي لإدارة فواتير الكهرباء والمياه الخاصة بالوحدات العقارية. نقدم لك منصة إلكترونية متكاملة تساعد على تنظيم 
+                                عمليات إصدار الفواتير ومتابعة الاستهلاك بشكل دقيق وشفاف، سواء كنت مستأجراً أو مالك عقار.
+                            </p>
+                            
+                            <p>
+                                في مجدول فوترة، هدفنا تبسيط التعاملات المالية الشهرية بين المستأجرين وإدارة العقار، وتوفير تجربة سلسة ومنظمة 
+                                وآمنة عبر واجهة سهلة الاستخدام. نستخدم تقنيات حديثة وبرمج مباشر أو عبر مزودج الخدمات لتضمين دقة 
+                                المعلومات وسهولة الوصول إليها في أي وقت.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
             
+        </main>
 
+        
+ 
+    <!-- sign out Modal -->
+  <div class="modal fade" id="signOutModal" tabindex="-1" aria-labelledby="signOutModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content banking-modal-content">
+        <div class="modal-body banking-modal-body text-center p-4">
+          <!-- Bank Icon -->
+          <div class="banking-icon-container mb-4">
+            <i class="fa-light fa-arrow-right-from-bracket"></i>
+          </div>
+          
+          <!-- Title -->
+          <h4 class="banking-title mb-4"> تسجيل خروج </h4>
+          <p class="trf-text">
+            هل أنت متأكد من تسجيل الخروج؟
+          </p>
+          
+          <!-- form -->
+        <div class="trf-form container mt-4" dir="rtl">
+            <form id="trf-upload-form" enctype="multipart/form-data">
+                <div class="d-flex gap-2 mt-3 justify-content-end">
+                    <button type="submit" class="btn btn-primary trf-submit" data-bs-toggle="modal" data-bs-target="#successSentModal">
+                        تأكيد
+                    </button>
+                    <button type="button" class="btn btn-light trf-cancel" data-bs-dismiss="modal" aria-label="Close">إلغاء العملية </button>
+                </div>
+            </form>
         </div>
-
-          <!-- Stats Cards Row 2 -->
-          <!-- <div class="row adb-stats-row">
-            
-          </div> -->
-
-          <!-- Stats Cards Row 3 -->
-          <!-- <div class="row adb-stats-row">
-            
-          </div> -->
-
+        </div>
+      </div>
+    </div>
+  </div>
           <!-- Footer -->
           <footer class="adb-footer">
             <div class="row">

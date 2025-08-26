@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>reading history</title>
+    <title>privacy</title>
     <link rel="shortcut icon" type="img/png" href="images/logo.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
@@ -41,7 +41,8 @@
             <nav class="adb-sidebar-nav">
               <ul class="list-unstyled">
                 <li class="adb-nav-item">
-                  <a href="dashboard.html" class="adb-nav-link">
+                  <a href="dashboard.html" class="adb-nav-link active">
+
                     <i class="fas fa-tachometer-alt"></i>
                     <span>لوحة التحكم</span>
                   </a>
@@ -53,7 +54,7 @@
                   </a>
                 </li>
                 <li class="adb-nav-item">
-                  <a href="bills.html" class="adb-nav-link active">
+                  <a href="bills.html" class="adb-nav-link">
                     <i class="fas fa-envelope"></i>
                     <span>قائمة الفواتير</span>
                   </a>
@@ -65,7 +66,7 @@
                   </a>
                 </li>
                 <li class="adb-nav-item">
-                    <a href="about.html" class="adb-nav-link adb-dropdown-toggle" data-adb-toggle="dropdown">
+                    <a href="#" class="adb-nav-link adb-dropdown-toggle active" data-adb-toggle="dropdown">
                         <i class="fas fa-question-circle"></i>
                         <span>المساعدة والدعم</span>
                         <i class="fas fa-chevron-down adb-arrow"></i>
@@ -74,7 +75,7 @@
                         <a class="adb-dropdown-item" href="about.html">من نحن</a>
                         <a class="adb-dropdown-item" href="terms.html">الشروط والأحكام</a>
                         <a class="adb-dropdown-item" href="faq.html">الأسئلة الشائعة</a>
-                        <a class="adb-dropdown-item" href="privacy.html">سياسة الخصوصية</a>
+                        <a class="adb-dropdown-item active" href="privacy.html">سياسة الخصوصية</a>
                         <a class="adb-dropdown-item" href="contact.html">تواصل معنا</a>
                     </div>
                 </li>
@@ -120,7 +121,7 @@
                         </div>
                         
                         <div class="adb-user-info-lang">
-                            <button class="btn adb-lang-toggle" >
+                            <button class="btn adb-lang-toggle">
                                 <i class="fa-regular fa-globe"></i>
                             </button>
                             <div class="adb-avatar-name adb-dropdown-toggle" data-adb-toggle="dropdown">
@@ -170,143 +171,131 @@
             <nav aria-label="adb-breadcrumb">
                 <ol class="breadcrumb adb-breadcrumb justify-content-end">
                 <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-                <li class="breadcrumb-item"><a href="units-meters.html">قائمة الطوابق والعدادات</a></li>
-
-                <li class="breadcrumb-item active" aria-current="page">عرض سجل القراءات  </li>
+                <li class="breadcrumb-item active" aria-current="page">سياسة الخصوصية  </li>
                 </ol>
             </nav>
             <!-- Page Title -->
-             <div class="adb-title-back-btn">
-                <h2 class="adb-page-title"> عرض سجل القراءات </h2>    
-                <a href="units-meters.html" class="adb-back">رجوع <i class="fa-light fa-arrow-left"></i> </a>
-            </div>
+            <h2 class="adb-page-title">سياسة الخصوصية  </h2>    
         </div>
 
-        <!-- Chart Info Panel Section -->
-        <div class="row">
-            <!-- Info Panel -->
-            <div class="col-lg-6 col-md-12 col-12">
-                <div class="adb-info-panel">
-                <h2 class="adb-panel-title">بيانات العداد</h2>
+        <!-- Main Content -->
+         <div class="sdb_container">
+    
+        <!-- Content Area -->
+        <div class="sdb_content">
+            
+            <div class="sdb_content_body">
                 
-                <div class="adb-info-grid">
-                    <div class="adb-info-item">
-                    <span class="adb-info-label">تاريخ بداية الإيجار</span>
-                    <span class="adb-info-value">2025/05/10</span>
-                    </div>
-                    
-                    <div class="adb-info-item">
-                    <span class="adb-info-label">نوع العداد</span>
-                    <span class="adb-info-value">كهرباء</span>
-                    </div>
-                    
-                    <div class="adb-info-item">
-                    <span class="adb-info-label">رقم العداد</span>
-                    <span class="adb-info-value">0001234</span>
-                    </div>
-                    
-                    <div class="adb-info-item">
-                    <span class="adb-info-label">اسم الطابق</span>
-                    <span class="adb-info-value">الطابق الثالث</span>
-                    </div>
-                    
-                    <div class="adb-info-item">
-                    <span class="adb-info-label">النسبة من الطابق</span>
-                    <span class="adb-info-value">25%</span>
-                    </div>
-                    
-                    <div class="adb-info-item adb-consumption-current">
-                    <span class="adb-info-label">
-                        استهلاك الشهر حتى الآن
-                        <i class="fas fa-bolt adb-consumption-icon"></i>            
-                    </span>
-                    <span class="adb-info-value adb-consumption-value">545 ك.و/س</span>
+            <div class="sdb_content_body_txt">
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                <div class="sdb_item_txt">
+                    <h3>طلبات المستخدم</h3>
+                    <p>
+                        طلبات الدخول بحسب نوع المستخدم (مستثمر - مدير - صراف). وما لا يمكن تنفيذ عمليات عبر منصور بها من حساباتك
+                    </p>
+                </div>
+                
+            </div>    
+
+            <!-- Sidebar -->
+            <div class="sdb_sidebar">
+    
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
                     </div>
                 </div>
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
                 </div>
-            </div>
-
-            <!-- Chart Section -->
-            <div class="col-lg-6 col-md-12 mb-4 col-6">
-                <div class="adb-chart-card">
-                    
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
                 </div>
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
+                </div>
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
+                </div>
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
+                </div>
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
+                </div>
+                <div class="sdb_menu_item">
+                    <i class="fa-light fa-arrow-left"></i>
+                    <div class="sdb_menu_title" data-ar="طلبات المستخدم" data-en="User Requests">
+                        طلبات المستخدم
+                    </div>
+                </div>
+                
             </div>
-        </div>
-
-        <div class="adb-history-title">
-            <h2 class="adb-page-title"> سجل قراءات عداد الكهرباء</h2>    
-        </div>
-        <!-- Stats Cards Row 1 -->
-        <div class="row adb-stats-row">
-
-            <div class="table-responsive">
-                <table class="table units-data-table" id="unitsTable">
-                <thead class="units-table-head">
-                    <tr>
-                        <th scope="col" class="units-th-number">#</th>
-                        <th scope="col" class="units-th-date">تاريخ تسجيل القراءة </th>
-                        <th scope="col" class="units-th-name"> القراءة الحالية</th>
-                        <th scope="col" class="units-th-percentage">القراءة السابقة</th>
-                        <th scope="col" class="units-th-meter-name">الاستهلاك اليومي </th>
-                        <th scope="col" class="units-th-meter-type">وقت التحديث </th>
-                    </tr>
-                </thead>
-                <tbody class="units-table-body">
-
-                    <tr class="units-table-row">
-                        <td class="units-td-number">1</td>
-                        <td class="units-td-date">2025/07/01</td>
-                        <td class="units-td-name"> 1959</td>
-                        <td class="units-td-percentage">1920</td>
-                        <td class="units-td-meter-name">39  </td>                        
-                        <td class="units-td-meter-number">23:59</td>
-                    </tr>
-
-                    <tr class="units-table-row">
-                        <td class="units-td-number">1</td>
-                        <td class="units-td-date">2025/07/01</td>
-                        <td class="units-td-name"> 1959</td>
-                        <td class="units-td-percentage">1920</td>
-                        <td class="units-td-meter-name">39  </td>                        
-                        <td class="units-td-meter-number">23:59</td>
-                    </tr>
-
-                    <tr class="units-table-row">
-                        <td class="units-td-number">1</td>
-                        <td class="units-td-date">2025/07/01</td>
-                        <td class="units-td-name"> 1959</td>
-                        <td class="units-td-percentage">1920</td>
-                        <td class="units-td-meter-name">39  </td>                        
-                        <td class="units-td-meter-number">23:59</td>
-                    </tr>
-
-                    <tr class="units-table-row">
-                        <td class="units-td-number">1</td>
-                        <td class="units-td-date">2025/07/01</td>
-                        <td class="units-td-name"> 1959</td>
-                        <td class="units-td-percentage">1920</td>
-                        <td class="units-td-meter-name">39  </td>                        
-                        <td class="units-td-meter-number">23:59</td>
-                    </tr>
-
-                    <tr class="units-table-row">
-                        <td class="units-td-number">1</td>
-                        <td class="units-td-date">2025/07/01</td>
-                        <td class="units-td-name"> 1959</td>
-                        <td class="units-td-percentage">1920</td>
-                        <td class="units-td-meter-name">39  </td>                        
-                        <td class="units-td-meter-number">23:59</td>
-                    </tr>
-                    
-                </tbody>
-                </table>
+                
+                
             </div>
+
+            
 
         </div>
 
+    </div>
 
-        
+         
     <!-- sign out Modal -->
   <div class="modal fade" id="signOutModal" tabindex="-1" aria-labelledby="signOutModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -338,7 +327,6 @@
       </div>
     </div>
   </div>
-
 
           <!-- Footer -->
           <footer class="adb-footer">

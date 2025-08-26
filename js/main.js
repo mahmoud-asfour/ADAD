@@ -28,7 +28,7 @@ $(document).ready(function() {
   
   // Handle dropdown item clicks
   $('.adb-dropdown-item').on('click', function(e) {
-      e.preventDefault();
+      // e.preventDefault();
       console.log('Clicked:', $(this).text());
       // Add your navigation logic here
   });
@@ -65,6 +65,15 @@ $('.adb-user-dropdown .adb-dropdown-item').on('click', function(e) {
         // Add logout logic here
     }
 });
+
+ // FAQ Accordion functionality
+    $(function(){
+      $(".faq-question").on("click", function(){
+        var parent = $(this).closest(".faq-item");
+        parent.toggleClass("active");
+        parent.siblings().removeClass("active");
+      });
+    });
 
 
   
