@@ -90,55 +90,79 @@ $('.adb-user-dropdown .adb-dropdown-item').on('click', function(e) {
     },
     
     // Setup mobile menu functionality
-    setupMobileMenu: function() {
-      const $sidebar = $('.adb-sidebar');
-      const $mobileToggle = $('.adb-mobile-toggle');
-      const $body = $('body');
-      
-      // Create overlay for mobile
-      if (!$('.adb-sidebar-overlay').length) {
-        $body.append('<div class="adb-sidebar-overlay"></div>');
-      }
-      
-      const $overlay = $('.adb-sidebar-overlay');
-      
-      // Toggle mobile menu
-      $mobileToggle.on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        $sidebar.toggleClass('show');
-        $overlay.toggleClass('show');
-        $body.toggleClass('adb-sidebar-open');
-      });
-      
-      // Close menu when clicking overlay
-      $overlay.on('click', function() {
+setupMobileMenu: function() {
+  const $sidebar = $('.adb-sidebar');
+  const $mobileToggle = $('.adb-mobile-toggle');
+  const $toggleIcon = $('.adb-mobile-toggle i'); // Select the icon element
+  const $body = $('body');
+  
+  // Create overlay for mobile
+  if (!$('.adb-sidebar-overlay').length) {
+    $body.append('<div class="adb-sidebar-overlay"></div>');
+  }
+  
+  const $overlay = $('.adb-sidebar-overlay');
+  
+  // Function to update icon based on menu state
+  function updateToggleIcon(isOpen) {
+    if (isOpen) {
+      $toggleIcon.removeClass('fas fa-bars').addClass('fal fa-times');
+    } else {
+      $toggleIcon.removeClass('fal fa-times').addClass('fas fa-bars');
+    }
+  }
+  
+  // Toggle mobile menu
+  $mobileToggle.on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const isCurrentlyOpen = $sidebar.hasClass('show');
+    
+    $sidebar.toggleClass('show');
+    $overlay.toggleClass('show');
+    $body.toggleClass('adb-sidebar-open');
+    
+    // Update icon based on new state
+    updateToggleIcon(!isCurrentlyOpen);
+  });
+  
+  // Close menu when clicking overlay
+  $overlay.on('click', function() {
+    $sidebar.removeClass('show');
+    $overlay.removeClass('show');
+    $body.removeClass('adb-sidebar-open');
+    
+    // Reset icon to bars when closed
+    updateToggleIcon(false);
+  });
+  
+  // Close menu when clicking outside on mobile
+  $(document).on('click', function(e) {
+    if ($(window).width() <= 991) {
+      if (!$(e.target).closest('.adb-sidebar, .adb-mobile-toggle').length) {
         $sidebar.removeClass('show');
         $overlay.removeClass('show');
         $body.removeClass('adb-sidebar-open');
-      });
+        
+        // Reset icon to bars when closed
+        updateToggleIcon(false);
+      }
+    }
+  });
+  
+  // Handle window resize
+  $(window).on('resize', function() {
+    if ($(window).width() > 991) {
+      $sidebar.removeClass('show');
+      $overlay.removeClass('show');
+      $body.removeClass('adb-sidebar-open');
       
-      // Close menu when clicking outside on mobile
-      $(document).on('click', function(e) {
-        if ($(window).width() <= 991) {
-          if (!$(e.target).closest('.adb-sidebar, .adb-mobile-toggle').length) {
-            $sidebar.removeClass('show');
-            $overlay.removeClass('show');
-            $body.removeClass('adb-sidebar-open');
-          }
-        }
-      });
-      
-      // Handle window resize
-      $(window).on('resize', function() {
-        if ($(window).width() > 991) {
-          $sidebar.removeClass('show');
-          $overlay.removeClass('show');
-          $body.removeClass('adb-sidebar-open');
-        }
-      });
-    },
+      // Reset icon to bars when closed
+      updateToggleIcon(false);
+    }
+  });
+},
     
     // Setup language toggle functionality
     setupLanguageToggle: function() {
