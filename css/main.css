@@ -1390,7 +1390,7 @@ html[dir="ltr"] .adb-sidebar-content{
     }
 
     .adb-logo {
-      height: 90px;
+      height: 52px;
       width: 90px;
       object-fit: contain;
     }
@@ -1634,6 +1634,7 @@ html[dir="ltr"] .adb-footer-text.footer-left{
   
   .adb-sidebar.show {
     left: 0;
+    width: auto;
   }
   
   [dir="rtl"] .adb-sidebar.show {
@@ -1727,6 +1728,10 @@ html[dir="ltr"] .adb-footer-text.footer-left{
   .adb-sidebar-title {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .adb-sidebar-content{
+    margin: 15px 15px;
   }
   
   .adb-sidebar-nav .adb-nav-link {
