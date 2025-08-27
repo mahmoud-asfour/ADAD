@@ -1640,6 +1640,10 @@ html[dir="ltr"] .adb-footer-text.footer-left{
   [dir="rtl"] .adb-sidebar.show {
     right: 0;
   }
+
+  [dir="ltr"] .adb-sidebar.show {
+    width: 100% !important;
+  }
   
   .adb-content {
     padding: 1rem;
